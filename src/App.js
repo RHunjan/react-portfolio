@@ -2,6 +2,7 @@ import React from 'react';
 import About from './components/About';
 import Nav from './components/Nav';
 import Portfolio from './components/Portfolio';
+import ContactForm from './components/Contact';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div>
         <Nav></Nav>
         <main>
+          <ContactForm></ContactForm>
           <About></About>
           <Portfolio></Portfolio>
           
