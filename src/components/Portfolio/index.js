@@ -19,7 +19,7 @@ function Portfolio() {
  ];
 
   return (
-   <section>
+   <section id="portfolio">
     <ul className="flex-row">
       {projects.map((project) => (
         <li 
