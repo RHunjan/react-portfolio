@@ -4,8 +4,16 @@ import React ,{useState} from 'react';
 function Nav(props) {
   const {
     contactSelected,
-    setContactSelected
+    setContactSelected,
+    portfolioSelected,
+    setPortfolioSelected
   } = props;
+
+  function aboutState() {
+   setPortfolioSelected(false);
+   setContactSelected(false);
+   
+}
 
   return (
     <header>
@@ -16,17 +24,19 @@ function Nav(props) {
        </h2>
     <nav>
       <ul className="flex-row">
-                <li className="mx-2">
+               <li className={`mx-2 ${!contactSelected && `navActive`}`}
+ 
+                >
                <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>About Me</a>
             </li>
-             <li className="mx-2">
+             <li className={`mx-2 ${!contactSelected && 'navActive'}`}>
               <a data-testid="about" href="#portfolio" onClick={() => setContactSelected(false)}>Portfolio</a>
             </li>
-              <li className="mx-2">
+             <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                <span onClick={() => setContactSelected(true)}>Contact</span>
               </li>
-              <li className="mx-2">
-                <a href="resume">Resume</a>
+               <li className={`mx-2 ${!contactSelected && 'navActive'}`}>
+                  <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>Resume</a>
             </li>
         </ul>
 

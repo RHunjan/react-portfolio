@@ -1,20 +1,22 @@
 import React from 'react';
-import photo from "../../assets/small/commercial/0.jpg";
-import photo1 from "../../assets/small/commercial/1.jpg";
-import photo2 from "../../assets/small/commercial/2.jpg";
-import photo3 from "../../assets/small/commercial/3.jpg";
-import photo4 from "../../assets/small/commercial/4.jpg";
+import photo from "../../assets/small/commercial/1.png";
+import photo1 from "../../assets/small/commercial/2.png";
+import photo2 from "../../assets/small/commercial/3.png";
+import photo3 from "../../assets/small/commercial/4.png";
+import photo4 from "../../assets/small/commercial/5.png";
+import photo5 from "../../assets/small/commercial/6.png";
 
  
 
 function Portfolio() {
   //list the projects
   const projects = [
-  {name: "Project1", githublink: "www", deployedLink: "www", pic: photo, desc: 'something',},
-  { name: "Project2",githublink: "www", deployedLink: "www", pic: photo1, desc: 'something',},
-  { name: "Project3", githublink: "www", deployedLink: "www", pic: photo2, desc: 'something',},
-  { name: "Project4", githublink: "www", deployedLink: "www", pic: photo3, desc: 'something',},
-   { name: "Project5", githublink: "www", deployedLink: "www", pic: photo4, desc: 'something',},
+  {name: "Yard Sale!", githublink: <a href="https://github.com/RHunjan/yard-sale">GitHub </a>, deployedLink: <a href="https://yard-5ale.herokuapp.com/">Heroku Link </a>, pic: photo, desc: 'Yard Sale',},
+  { name: "Charge it Up!",githublink: <a href="https://github.com/tarequem/ev-mapper">GitHub Link </a>, deployedLink: <a href="https://tarequem.github.io/ev-mapper/">Deployed App </a>, pic: photo1, desc: 'Charging Cars',},
+  { name: "Note Taker Starter Code", githublink: <a href="https://github.com/RHunjan/note-taker-two/blob/main/README.md">GitHub Link </a>, deployedLink: <a href="https://fierce-wave-38426.herokuapp.com/notes">Deployed App </a>, pic: photo2, desc: 'Note pad',},
+  { name: "Blog Post", githublink: <a href="https://github.com/RHunjan/blog-post">GitHub Link </a>, deployedLink: <a href="https://mighty-ridge-59271.herokuapp.com/">Deployed App </a>, pic: photo3, desc: 'Blog Post',},
+   { name: "Random Password", githublink: <a href="https://github.com/RHunjan/random-password/tree/main">GitHub Link </a>, deployedLink: <a href="https://rhunjan.github.io/random-password/">Deployed App </a>, pic: photo4, desc: 'Password Generator',},
+   { name: "Quiz", githublink: <a href="https://github.com/RHunjan/something-new">GitHub Link </a>, deployedLink: <a href="https://rhunjan.github.io/something-new/">Deployed App </a>, pic: photo5, desc: 'something',},
 
  ];
 
