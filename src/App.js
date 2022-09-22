@@ -12,18 +12,14 @@ import Resume from './components/Resume';
 function App() {
 
   const [contactSelected, setContactSelected] = useState(false);
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false)
+ 
 
   return (
     <div>
         <Nav
             contactSelected={contactSelected}
             setContactSelected={setContactSelected}
-            portfolioSelected={portfolioSelected}
-            setPortfolio={setPortfolioSelected}
-            resumeSelected={resumeSelected}
-            setResumeSelected={setResumeSelected}        >
+                  >
         </Nav>
         
             <main>

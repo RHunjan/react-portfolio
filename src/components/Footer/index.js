@@ -4,7 +4,9 @@ function Footer (){
     return (
         <section>
             <div>
-                <p>Reena</p>
+             
+                <a href="https://github.com/RHunjan">Checkout my GitHub Repo!</a>
+                <a href="https://www.linkedin.com/in/reenahunjan/">Checkout my LinkedIn!</a>
             </div>
         </section>
     );
